@@ -1,0 +1,22 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid blue;
+}
+
+.text{
+	font-size: 16px;
+}
