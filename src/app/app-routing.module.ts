@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -21,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'article',
-    loadChildren: () => import('./article/article.module').then(m => m.PaymentPageModule)
+    loadChildren: () => import('./article/article.module').then(m => m.ArticlePageModule)
   },
   {
     path: 'course',
