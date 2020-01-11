@@ -1,1 +1,1 @@
-# kathryn
+# Kathryn Online University
