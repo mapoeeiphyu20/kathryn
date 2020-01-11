@@ -51,11 +51,15 @@ describe('AppComponent', () => {
     const menuItems = app.querySelectorAll('ion-label');
     expect(menuItems.length).toEqual(2);
     expect(menuItems[0].textContent).toContain('Home');
-    expect(menuItems[1].textContent).toContain('About');
-    expect(menuItems[2].textContent).toContain('Profile');
-    expect(menuItems[3].textContent).toContain('Payment');
-    expect(menuItems[4].textContent).toContain('LecturerProfile');
+    expect(menuItems[1].textContent).toContain('AboutUs');
+    expect(menuItems[2].textContent).toContain('Videos');
+    expect(menuItems[3].textContent).toContain('Article');
+    expect(menuItems[4].textContent).toContain('Courses');
     expect(menuItems[5].textContent).toContain('LecturerProfile');
+    expect(menuItems[6].textContent).toContain('StudentVoices');
+    expect(menuItems[7].textContent).toContain('Shops');
+    expect(menuItems[8].textContent).toContain('Events');
+    expect(menuItems[9].textContent).toContain('Profile');
   });
 
   it('should have urls', async () => {
@@ -66,10 +70,14 @@ describe('AppComponent', () => {
     expect(menuItems.length).toEqual(2);
     expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual('/home');
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/about');
-    expect(menuItems[2].getAttribute('ng-reflect-router-link')).toEqual('/profile');
-    expect(menuItems[3].getAttribute('ng-reflect-router-link')).toEqual('/payment');
-    expect(menuItems[4].getAttribute('ng-reflect-router-link')).toEqual('/profile');
+    expect(menuItems[2].getAttribute('ng-reflect-router-link')).toEqual('/video');
+    expect(menuItems[3].getAttribute('ng-reflect-router-link')).toEqual('/article');
+    expect(menuItems[4].getAttribute('ng-reflect-router-link')).toEqual('/course');
     expect(menuItems[5].getAttribute('ng-reflect-router-link')).toEqual('/lecturer-profile');
+    expect(menuItems[6].getAttribute('ng-reflect-router-link')).toEqual('/student-voice');
+    expect(menuItems[7].getAttribute('ng-reflect-router-link')).toEqual('/shop');
+    expect(menuItems[8].getAttribute('ng-reflect-router-link')).toEqual('/event');
+    expect(menuItems[9].getAttribute('ng-reflect-router-link')).toEqual('/profile');
   });
 
 });

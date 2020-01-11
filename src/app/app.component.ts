@@ -22,18 +22,18 @@ export class AppComponent {
       icon: 'information-circle'
     },
     {
-      title: 'Video',
-      url: '/home',
+      title: 'Videos',
+      url: '/video',
       icon: 'logo-youtube'
     },
     {
       title: 'Article',
-      url: '/payment',
+      url: '/article',
       icon: 'paper'
     },
     {
       title: 'Courses',
-      url: '/about',
+      url: '/course',
       icon: 'book'
     },
     {
@@ -43,7 +43,7 @@ export class AppComponent {
     },
     {
       title: 'Student Voices',
-      url: '/payment',
+      url: '/student-voice',
       icon: 'notifications'
     },
     {
@@ -63,7 +63,7 @@ export class AppComponent {
     },
     {
       title: 'Logout',
-      url: '/profile',
+      url: '/logout',
       icon: 'exit'
     }
   ];

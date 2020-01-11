@@ -26,6 +26,26 @@ const routes: Routes = [
   {
     path: 'lecturer-profile',
     loadChildren: () => import('./lecturer-profile/lecturer-profile.module').then(m => m.LecturerProfilePageModule)
+  },
+  {
+    path: 'lecturer-profile',
+    loadChildren: () => import('./lecturer-profile/lecturer-profile.module').then(m => m.LecturerProfilePageModule)
+  },
+  {
+    path: 'lecturer-profile',
+    loadChildren: () => import('./lecturer-profile/lecturer-profile.module').then(m => m.LecturerProfilePageModule)
+  },
+  {
+    path: 'lecturer-profile',
+    loadChildren: () => import('./lecturer-profile/lecturer-profile.module').then(m => m.LecturerProfilePageModule)
+  },
+  {
+    path: 'lecturer-profile',
+    loadChildren: () => import('./lecturer-profile/lecturer-profile.module').then(m => m.LecturerProfilePageModule)
+  },
+  {
+    path: 'lecturer-profile',
+    loadChildren: () => import('./lecturer-profile/lecturer-profile.module').then(m => m.LecturerProfilePageModule)
   }
 ];
 
