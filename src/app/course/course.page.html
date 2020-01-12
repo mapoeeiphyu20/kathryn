@@ -10,11 +10,29 @@
 </ion-header>
 
 <ion-content class="about">
-    <ion-card>
-        <img id="bgrimage" src="/assets/img/logo.png" alt="imagenotavailable">
-        <ion-card-header>
-            <ion-card-title>Welcome to Courses</ion-card-title>
-        </ion-card-header>
-    </ion-card>
+    <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($shop)"
+                       (ionCancel)="onCancel($shop)"></ion-searchbar>
+    <div class="tab-wrap">
+  
+    <input type="radio" name="tabs" id="tab1" checked>
+    <div class="tab-label-content" id="tab1-content">
+      <label class="tab-label" for="tab1" style="font-size: 16px;">My Courses</label>
+      <div class="tab-content">
+        This is My Courses.
+      </div>
+    </div>
+     
+    <input type="radio" name="tabs" id="tab2">
+    <div class="tab-label-content" id="tab2-content">
+      <label class="tab-label" for="tab2" style="font-size: 16px;">New Courses</label>
+      <div class="tab-content">
+        This is New Courses.
+      </div>
+    </div>
+    
+    
+    <div class="slide"></div>
+  
+    </div>
 
 </ion-content>

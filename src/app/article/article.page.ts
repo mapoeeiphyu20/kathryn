@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['article.page.scss']
 })
 export class ArticlePage implements OnInit {
+
+  tab1: any = 'VideoPage';
+  tab2: any = 'AboutPage';
   
   constructor() {
   }
