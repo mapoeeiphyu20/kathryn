@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Nav } from 'ionic-angular';
+import { EventService } from '../../providers/event-service-mock';
+import { LecturerDetailPage } from '../lecturer-detail/lecturer-detail.page';
 
 @Component({
   selector: 'app-event',
@@ -6,28 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['event.page.scss']
 })
 export class EventPage implements OnInit {
-  private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+
+  //@ViewChild(Nav) nav: Nav;
+  events: Array<any>;
+  
+  constructor(public service: EventService) {
+        service.findAll().then(data => this.events = data);
+  }
+
+  openEventDetail(event) {
+        //this.nav.push(EventDetailPage, event);
+        //this.navCtrl.push(EventDetailPage, event);
+        console.log("I've clicked Event");
   }
 
   ngOnInit() {
