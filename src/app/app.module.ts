@@ -4,6 +4,7 @@ import { RouteReuseStrategy } from '@angular/router';
 
 import { LecturerService } from "../providers/lecturer-service-mock";
 import { EventService } from "../providers/event-service-mock";
+import { ShopService } from "../providers/shop-service-mock";
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -25,6 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
     SplashScreen,
     LecturerService,
     EventService,
+    ShopService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

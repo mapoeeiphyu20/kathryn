@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Nav } from 'ionic-angular';
+import { ShopService } from '../../providers/shop-service-mock';
+import { ShopDetailPage } from '../shop-detail/shop-detail.page';
 
 @Component({
   selector: 'app-shop',
@@ -6,28 +9,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['shop.page.scss']
 })
 export class ShopPage implements OnInit {
-  private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+  
+  //@ViewChild(Nav) nav: Nav;
+  shops: Array<any>;
+
+  searchKey: string = "";
+
+  //constructor(public service: ShopService) {
+        //service.findAll().then(data => this.shops = data);
+  //}
+
+  constructor(public service: ShopService) {
+        this.findAll();
+  }
+
+  onInput(shop) {
+        this.service.findByName(this.searchKey)
+            .then(data => {
+                this.shops = data;
+            })
+            .catch(error => alert(JSON.stringify(error)));
+
+            console.log("onInput is worked.");
+  }
+
+  onCancel(shop) {
+      this.findAll();
+      console.log("onCancel is worked.");
+  }
+
+  findAll() {
+        this.service.findAll()
+            .then(data => this.shops = data)
+            .catch(error => alert(error));
+  }
+
+  openShopDetail(shop) {
+        //this.nav.push(ShopDetailPage, shop);
+        //this.navCtrl.push(ShopDetailPage, shop);
+        console.log("I've clicked Shop");
   }
 
   ngOnInit() {
