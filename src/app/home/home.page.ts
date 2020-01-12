@@ -9,4 +9,10 @@ export class HomePage {
 
   constructor() {}
 
+  openAbout(about) {
+        //this.nav.push(AboutPage, about);
+        //this.navCtrl.push(AboutPage, about);
+        console.log("I've clicked About Page");
+  }
+
 }
