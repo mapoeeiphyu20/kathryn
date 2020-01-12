@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-//import { Nav } from 'ionic-angular';
+import { Nav } from 'ionic-angular';
 import { LecturerService } from '../../providers/lecturer-service-mock';
 import { LecturerDetailPage } from '../lecturer-detail/lecturer-detail.page';
 
@@ -19,6 +19,7 @@ export class LecturerProfilePage implements OnInit {
 
   openLecturerDetail(lecturer) {
         //this.nav.push(LecturerDetailPage, lecturer);
+        //this.navCtrl.push(LecturerDetailPage, lecturer);
         console.log("I've clicked Lecturer");
   }
 

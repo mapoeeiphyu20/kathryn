@@ -2,7 +2,7 @@ let lecturers: Array<any> = [
     {
         id: 1,
         name: "Caroline Kingsley",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "caroline@ionicrealty.com",
@@ -11,7 +11,7 @@ let lecturers: Array<any> = [
     {
         id: 2,
         name: "Michael Jones",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "michael@ionicrealty.com",
@@ -20,7 +20,7 @@ let lecturers: Array<any> = [
     {
         id: 3,
         name: "Jonathan Bradley",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "jonathan@ionicrealty.com",
@@ -29,7 +29,7 @@ let lecturers: Array<any> = [
     {
         id: 4,
         name: "Jennifer Wu",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "jen@ionicrealty.com",
@@ -38,7 +38,7 @@ let lecturers: Array<any> = [
     {
         id: 5,
         name: "Olivia Green",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "olivia@ionicrealty.com",
@@ -47,7 +47,7 @@ let lecturers: Array<any> = [
     {
         id: 6,
         name: "Miriam Aupont",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "miriam@ionicrealty.com",
@@ -56,7 +56,7 @@ let lecturers: Array<any> = [
     {
         id: 7,
         name: "Michelle Lambert",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "michelle@ionicrealty.com",
@@ -65,7 +65,7 @@ let lecturers: Array<any> = [
     {
         id: 8,
         name: "Victor Ochoa",
-        title: "Senior Broker",
+        title: "Senior Lecturer",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "victor@ionicrealty.com",

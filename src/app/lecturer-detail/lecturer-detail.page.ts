@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController, NavParams} from 'ionic-angular';
+import { LecturerService } from '../../providers/lecturer-service-mock';
 
 @Component({
   selector: 'app-lecturer-detail',
@@ -6,28 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['lecturer-detail.page.scss']
 })
 export class LecturerDetailPage implements OnInit {
-  private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+
+  lecturer: any;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public service: LecturerService) {
+        this.lecturer = this.navParams.data;
+        service.findById(this.lecturer.id).then(
+            lecturer => this.lecturer = lecturer
+        );
   }
 
   ngOnInit() {
