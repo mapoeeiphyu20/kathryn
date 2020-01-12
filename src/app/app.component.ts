@@ -63,7 +63,7 @@ export class AppComponent {
     },
     {
       title: 'Logout',
-      url: '/logout',
+      url: '/',
       icon: 'exit'
     }
   ];

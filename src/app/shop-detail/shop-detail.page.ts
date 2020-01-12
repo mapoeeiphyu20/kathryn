@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams} from 'ionic-angular';
+import { NavParams } from 'ionic-angular';
 import { ShopService } from '../../providers/shop-service-mock';
 
 @Component({
@@ -11,7 +11,7 @@ export class ShopDetailPage implements OnInit {
 
   shop: any;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, public service: ShopService) {
+  constructor(public navParams: NavParams, public service: ShopService) {
         this.shop = this.navParams.data;
         service.findById(this.shop.id).then(
             shop => this.shop = shop

@@ -17,6 +17,7 @@
     <h2>Hello..... I'm Shop Page.</h2>
     <ion-list>
         <button ion-item *ngFor="let shop of shops" (click)="openShopDetail(shop)">
+          <!-- <ion-button [routerLink]="'/detail/' + todo.id"> -->
             <ion-avatar item-left>
                 <img src="{{shop.picture}}"/>
             </ion-avatar>
