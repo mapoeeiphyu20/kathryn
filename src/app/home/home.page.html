@@ -13,8 +13,13 @@
 
   <ion-row>
     <ion-col col-4>
+
+      <!-- <ion-button href="/video">Move to Video page</ion-button>
+
+      <ion-button [routerLink]="['/profile']">Move to Profile page</ion-button> -->
+
       <div>
-        <button class="btn" (click)="openAbout(about)">
+        <button class="btn" [routerLink]="['/about']">
             <ion-icon slot="start" color="primary" name="information-circle"></ion-icon>
         </button>
       </div>
@@ -24,7 +29,7 @@
     </ion-col>
     <ion-col>
       <div>
-        <button class="btn" (click)="openVideo(video)">
+        <button class="btn" [routerLink]="['/video']">
           <ion-icon slot="start" color="primary" name="logo-youtube"></ion-icon>
         </button>
       </div>
@@ -34,7 +39,7 @@
     </ion-col>
     <ion-col>
       <div>
-        <button class="btn" (click)="openArticle(article)">
+        <button class="btn" [routerLink]="['/article']">
         <ion-icon slot="start" color="primary" name="paper"></ion-icon>
       </button>
       </div>
@@ -47,7 +52,7 @@
   <ion-row>
     <ion-col col-md-4>
       <div>
-        <button class="btn" (click)="openCourse(course)">
+        <button class="btn" [routerLink]="['/course']">
         <ion-icon slot="start" color="primary" name="book"></ion-icon>
       </button>
       </div>
@@ -57,7 +62,7 @@
     </ion-col>
     <ion-col>
       <div>
-        <button class="btn" (click)="openLecturerProfile(lecturerProfile)">
+        <button class="btn" [routerLink]="['/lecturer-profile']">
         <ion-icon slot="start" color="primary" name="contacts"></ion-icon>
       </button>
       </div>
@@ -67,7 +72,7 @@
     </ion-col>
     <ion-col col-md-4>
       <div>
-        <button class="btn" (click)="openStudentVoice(studentVoice)">
+        <button class="btn" [routerLink]="['/student-voice']">
         <ion-icon slot="start" color="primary" name="notifications"></ion-icon>
       </button>
       </div>
@@ -80,7 +85,7 @@
   <ion-row>
     <ion-col col-md-4>
       <div>
-        <button class="btn" (click)="openShop(shop)">
+        <button class="btn" [routerLink]="['/shop']">
         <ion-icon slot="start" color="primary" name="cart"></ion-icon>
         </button>
       </div>
@@ -91,7 +96,7 @@
 
     <ion-col>
       <div>
-        <button class="btn" (click)="openEvent(event)">
+        <button class="btn" [routerLink]="['/event']">
         <ion-icon slot="start" color="primary" name="calendar"></ion-icon>
         </button>
       </div>
@@ -102,7 +107,7 @@
 
     <ion-col>
       <div>
-        <button class="btn" (click)="openProfile(profile)">
+        <button class="btn" [routerLink]="['/profile']">
           <ion-icon slot="start" color="primary" name="person"></ion-icon>
       </button>
       </div>
