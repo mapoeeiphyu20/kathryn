@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {NavController} from 'ionic-angular';
-import {LecturerService} from '../../providers/lecturer-service-mock';
-import {LecturerDetailPage} from '../lecturer-detail/lecturer-detail.page';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Nav } from 'ionic-angular';
+import { LecturerService } from '../../providers/lecturer-service-mock';
+import { LecturerDetailPage } from '../lecturer-detail/lecturer-detail.page';
 
 @Component({
   selector: 'app-lecturer-profile',
@@ -9,15 +9,16 @@ import {LecturerDetailPage} from '../lecturer-detail/lecturer-detail.page';
   styleUrls: ['lecturer-profile.page.scss']
 })
 export class LecturerProfilePage implements OnInit {
-
+  
+  @ViewChild(Nav) nav: Nav;
   lecturers: Array<any>;
 
-  constructor(public navCtrl: NavController, public service: LecturerService) {
+  constructor(public service: LecturerService) {
         service.findAll().then(data => this.lecturers = data);
   }
 
   openLecturerDetail(lecturer) {
-        this.navCtrl.push(LecturerDetailPage, lecturer);
+        this.nav.push(LecturerDetailPage, lecturer);
   }
 
   ngOnInit() {
