@@ -15,7 +15,7 @@ ion-header::after {
 	  z-index: -1;	  
 	}
 	input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-label {
-	  color: #00B9DF;
+	  color: #FEF100;
 	  border-left: #ddd solid 1px;
 	  border-right: #ddd solid 1px;
 	  font-weight: 500;
@@ -52,7 +52,7 @@ ion-header::after {
 	}
 
 	.slide {
-	  background: #00B9DF;
+	  background: #FEF100;
 	  width: calc(100% / 2);
 	  height: 4px;
 	  position: absolute;
