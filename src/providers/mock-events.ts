@@ -2,7 +2,7 @@ let events: Array<any> = [
     {
         id: 1,
         name: "Caroline Kingsley",
-        title: "Event 1",
+        title: "Ethical Leadership",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "caroline@ionicrealty.com",
@@ -11,7 +11,7 @@ let events: Array<any> = [
     {
         id: 2,
         name: "Michael Jones",
-        title: "Event 2",
+        title: "Women Leadership(Workshop)",
         phone: "617-244-3672",
         mobilePhone: "617-244-3672",
         email: "michael@ionicrealty.com",

@@ -23,6 +23,10 @@ export class EventPage implements OnInit {
         console.log("I've clicked Event");
   }
 
+  detail(event) {
+        console.log("I've clicked Detail Button.");
+  }
+
   ngOnInit() {
   }
   // add back when alpha.4 is out

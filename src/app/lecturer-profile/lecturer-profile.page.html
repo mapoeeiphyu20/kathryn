@@ -12,14 +12,22 @@
 <ion-content>
 
     <ion-list>
-          
-        <button ion-item *ngFor="let lecturer of lecturers" (click)="openLecturerDetail(lecturer)">
-            <ion-avatar item-left>
-                <img src="{{lecturer.picture}}"/>
-            </ion-avatar>
+
+        <ion-list-header>
+          <ion-label style="color: #fef100;font-size: 20px;">
+            LECTURER PROFILE
+          </ion-label>
+        </ion-list-header>
+
+        <ion-item ion-item *ngFor="let lecturer of lecturers">
+          <ion-avatar item-left>
+            <img src="{{lecturer.picture}}"/>
+          </ion-avatar>
+          <ion-label>
             <h2>{{lecturer.name}}</h2>
             <p>{{lecturer.title}}</p>
-        </button>
+          </ion-label>
+        </ion-item>
 
     </ion-list>
 

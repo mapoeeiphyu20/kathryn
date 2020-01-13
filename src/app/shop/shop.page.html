@@ -15,19 +15,10 @@
                        (ionCancel)="onCancel($shop)"></ion-searchbar>
                        
     <h2>Hello..... I'm Shop Page.</h2>
-    <ion-list>
-        <button ion-item *ngFor="let shop of shops" (click)="openShopDetail(shop)">
-          <!-- <ion-button [routerLink]="'/detail/' + todo.id"> -->
-            <ion-avatar item-left>
-                <img src="{{shop.picture}}"/>
-            </ion-avatar>
-            <h2>{{shop.name}}</h2>
-            <p>{{shop.title}}</p>
-        </button>
-    </ion-list>
+    
 
     <ion-row wrap>
-    <ion-col no-padding col-4 *ngFor="let shop of shops">  
+    <ion-col class="ion-no-padding" col-4 *ngFor="let shop of shops">  
       <ion-card (click)="openShopDetail(shop)"> 
 
         <ion-card class="img-width">
