@@ -29,7 +29,7 @@
         <div class="tab-label-content" id="tab1-content">
             <label class="tab-label" for="tab1" style="font-size: 16px;">Upcoming Events</label>
             <div class="tab-content">
-                There are Upcoming Events.
+                There's no Upcoming Events.
                 <ion-card *ngFor="let event of events">
                     <img src="{{event.picture}}"/>
                     <ion-card-header>
@@ -38,7 +38,7 @@
                     </ion-card-header>
                     <ion-card-content>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis {{event.email}}
+                            {{event.description}}
                         </p>
                         <ion-item>
                             <button ion-button icon-left (click)="detail(event)" clear item-right>
